@@ -1,0 +1,33 @@
+{
+  "name": "quackamole-grid",
+  "description": "Library to create resizeable layouts using CSS Grid System",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/quackamole-grid.umd.cjs",
+  "module": "./dist/quackamole-grid.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/quackamole-grid.js",
+      "require": "./dist/quackamole-grid.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.2.0"
+  }
+}
